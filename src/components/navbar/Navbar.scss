@@ -1,0 +1,37 @@
+﻿@use "../../scss/abstracts/mixins" as *;
+@use "../../scss/abstracts/variables" as *;
+
+//General styles
+#navbar {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 30px 20px;
+}
+
+//General styles
+#navbar > ul > li {
+  list-style-type: none;
+}
+
+//Mobile styles
+@media (min-width: $breakpoint-sm) {
+  #navbar {
+    justify-content: space-between;
+  }
+  .logo {
+    width: 144px;
+    height: 23.61px;
+    object-fit: cover;
+  }
+
+  .navbar-drawer-hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    height: 22px;
+    width: 24px;
+    object-fit: contain;
+  }
+}

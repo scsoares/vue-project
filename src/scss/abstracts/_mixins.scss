@@ -1,0 +1,8 @@
+﻿@use "variables" as v;
+
+@mixin body-mixin {
+  background-color: v.$white;
+  font-family: "Space Grotesk", sans-serif;
+  color: v.$black;
+  margin: 0;
+}

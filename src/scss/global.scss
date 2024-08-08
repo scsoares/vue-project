@@ -1,0 +1,6 @@
+﻿@use "./abstracts/variables" as *;
+@use "./abstracts/mixins" as *;
+
+body {
+  @include body-mixin;
+}
